@@ -13,10 +13,10 @@ export default function CardTechList({ className }: { className: string }) {
       <div className="tech-marquee">
         <div className="tech-marquee-track">
           {Array.from({ length: QTY }).map((_, i) => (
-            <Box>{i}</Box>
+            <Box key={`${i}-tech1`}>{i}</Box>
           ))}
           {Array.from({ length: QTY }).map((_, i) => (
-            <Box>{i}</Box>
+            <Box key={`${i}-tech2`}>{i}</Box>
           ))}
         </div>
       </div>

@@ -2,6 +2,6 @@ import { PropsWithChildren } from "react";
 
 export default function CardText({ children }: PropsWithChildren) {
   return (
-    <p className="text-base text-foreground/60">{children}</p>
+    <p className="text-sm text-foreground/60">{children}</p>
   )
 }

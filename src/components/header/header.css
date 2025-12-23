@@ -15,7 +15,7 @@ nav a {
 }
 
 .theme-btn {
-  @apply rounded-full hover:bg-black/5 p-2;
+  @apply rounded-full hover:bg-black/5 p-2 hover:backdrop-blur-md;
 }
 
 .language-options {
