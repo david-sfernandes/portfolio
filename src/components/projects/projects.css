@@ -1,0 +1,27 @@
+.card-project {
+  @apply p-4 text-left flex flex-col gap-3;
+}
+
+.card-project h5 {
+  @apply font-semibold text-3xl;
+}
+
+.card-project > p {
+  @apply text-foreground/60;
+}
+
+.tech-list {
+  @apply flex flex-wrap gap-x-2 gap-y-1;
+}
+
+.tech-node {
+  @apply rounded-md bg-background text-foreground text-xs/6 px-3;
+}
+
+.visit-btn {
+  @apply rounded-full bg-foreground text-background px-8 py-2 flex items-center justify-center gap-2.5 text-base/4;
+}
+
+.repo-btn {
+  @apply rounded-full bg-background text-foreground p-2;
+}
