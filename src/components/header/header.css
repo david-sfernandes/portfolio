@@ -1,0 +1,31 @@
+header {
+  @apply flex justify-between items-center px-10 py-7 fixed top-0 left-0 right-0 z-20;
+}
+
+nav {
+  @apply flex border border-foreground/15 rounded-full px-3.5 bg-white;
+}
+
+nav a {
+  @apply px-3.5 py-3 hover:bg-foreground/5 rounded-full font-semibold text-foreground/60;
+}
+
+.left-side {
+  @apply flex gap-5 items-center;
+}
+
+.theme-btn {
+  @apply rounded-full hover:bg-black/5 p-2;
+}
+
+.language-options {
+  @apply flex rounded-full overflow-hidden text-center h-11 text-base/10.5;
+}
+
+.language-options a {
+  @apply px-3.5 bg-background text-foreground h-full contain-paint border border-foreground;
+}
+
+.language-options a.active {
+  @apply text-background bg-foreground border border-foreground;
+}
