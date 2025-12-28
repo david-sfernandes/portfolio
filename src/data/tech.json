@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "name": "Azure",
+      "image": "azure.svg"
+    },
+    {
+      "name": "Git",
+      "image": "git.svg"
+    },
+    {
+      "name": "Linux",
+      "image": "linux.svg"
+    },
+    {
+      "name": "React",
+      "image": "react.svg"
+    },
+    {
+      "name": "Biome",
+      "image": "biome.svg"
+    },
+    {
+      "name": "GraphQL",
+      "image": "graphql.svg"
+    },
+    {
+      "name": "Next.js",
+      "image": "next.svg"
+    },
+    {
+      "name": "Storybook",
+      "image": "storybook.svg"
+    },
+    {
+      "name": "CSS",
+      "image": "css.svg"
+    },
+    {
+      "name": "HTML",
+      "image": "html.svg"
+    },
+    {
+      "name": "Node.js",
+      "image": "node.svg"
+    },
+    {
+      "name": "Tailwind.CSS",
+      "image": "tailwind.svg"
+    },
+    {
+      "name": "Docker",
+      "image": "docker.svg"
+    },
+    {
+      "name": "HTTPie",
+      "image": "httpie.svg"
+    },
+    {
+      "name": "PNPM",
+      "image": "pnpm.svg"
+    },
+    {
+      "name": "TypeScript",
+      "image": "ts.svg"
+    },
+    {
+      "name": "Firabase",
+      "image": "firabase.svg"
+    },
+    {
+      "name": "Jest",
+      "image": "jest.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "portgres.svg"
+    },
+    {
+      "name": "VScode",
+      "image": "vscode.svg"
+    },
+    {
+      "name": "GitHub",
+      "image": "github.svg"
+    },
+    {
+      "name": "JavaScript",
+      "image": "js.svg"
+    },
+    {
+      "name": "RabbitMQ",
+      "image": "rabbitmq.svg"
+    },
+    {
+      "name": "Python",
+      "image": "python.svg"
+    }
+  ]
+}

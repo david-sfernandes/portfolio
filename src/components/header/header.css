@@ -1,5 +1,5 @@
 header {
-  @apply flex justify-between items-center px-10 py-7 fixed top-0 left-0 right-0 z-20;
+  @apply flex justify-center md:justify-between items-center px-3 md:px-10 py-3.5 md:py-7 fixed top-0 left-0 right-0 z-20 w-full;
 }
 
 nav {
@@ -7,11 +7,11 @@ nav {
 }
 
 nav a {
-  @apply px-3.5 py-3 hover:bg-foreground/5 rounded-full font-semibold text-foreground/60;
+  @apply text-xs md:text-base px-3 md:px-3.5 py-2.5 md:py-3 hover:bg-foreground/5 rounded-full font-semibold text-foreground/60;
 }
 
 .left-side {
-  @apply flex gap-5 items-center;
+  @apply hidden md:flex gap-5 items-center;
 }
 
 .theme-btn {

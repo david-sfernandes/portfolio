@@ -5,7 +5,7 @@ import CardTitle from "./card-title";
 export default function CardBackend({ className }: { className: string }) {
   return (
     <div className={`card-layout ${className}`}>
-      <div className="flex gap-4 items-center">
+      <div className="card-stack-content">
         <div className="flex-1">
           <CardTitle>Back-End</CardTitle>
           <CardText>

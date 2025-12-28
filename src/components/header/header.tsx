@@ -6,10 +6,11 @@ export default function Header() {
     <header>
       <nav>
         <a href="#">Home</a>
-        <a href="#">Sobre Mim</a>
+        <a href="#">Sobre</a>
         <a href="#">Projetos</a>
         <a href="#">Contato</a>
       </nav>
+
       <div className="left-side">
         <button className="theme-btn">
           <SunIcon className="size-6" />
