@@ -22,10 +22,10 @@ nav a {
   @apply flex rounded-full overflow-hidden text-center h-11 text-base/10.5;
 }
 
-.language-options a {
+.language-options p {
   @apply px-3.5 bg-background text-foreground h-full contain-paint border border-foreground;
 }
 
-.language-options a.active {
+.language-options p.active {
   @apply text-background bg-foreground border border-foreground;
 }

@@ -15,14 +15,14 @@ export default function Header() {
         <button className="theme-btn">
           <SunIcon className="size-6" />
         </button>
-        <div className="language-options">
-          <Link href="/" className="active rounded-l-full">
+        <Link className="language-options" href="/en">
+          <p className="active rounded-l-full">
             PT
-          </Link>
-          <Link href="/en" className="rounded-r-full">
+          </p>
+          <p className="rounded-r-full">
             EN
-          </Link>
-        </div>
+          </p>
+        </Link>
       </div>
     </header>
   );

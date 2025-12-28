@@ -1,28 +1,11 @@
-import Image from "next/image";
-import CardText from "./card-text";
-import CardTitle from "./card-title";
+import CardStack from "./card-stack";
 
 export default function CardBackend({ className }: { className: string }) {
   return (
-    <div className={`card-layout ${className}`}>
-      <div className="card-stack-content">
-        <div className="flex-1">
-          <CardTitle>Back-End</CardTitle>
-          <CardText>
-            Atuo no desenvolvimento de back-ends, criando APIs, serviços e
-            integrações que sustentam aplicações modernas.
-          </CardText>
-        </div>
-        <div className="size-25 shrink-0 overflow-hidden block">
-          <Image
-            src={"/server.svg"}
-            width={230}
-            height={230}
-            className="object-cover size-full"
-            alt="server image"
-          />
-        </div>
-      </div>
-    </div>
+    <CardStack
+      title="Back-End"
+      text="Atuo no desenvolvimento de back-ends, criando APIs, serviços e integrações que sustentam aplicações modernas."
+      className={className}
+    />
   );
 }
