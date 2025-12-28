@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Home({ dictionary }: { dictionary: Record<string, string> }) {
   return (
     <main className="flex justify-center items-center h-screen w-full">
       <div className="flex flex-col items-center text-center max-w-full">
@@ -17,11 +17,14 @@ export default function Home() {
           <p className="text-xl">David Fernandes</p>
         </div>
         <h1 className="text-4xl/12 font-extrabold md:text-[6.75rem]/[6.75rem]">
-          Desenvolvedor
-          <br />
-          Full Stack
+          {dictionary.title.split("\n").map((line, index) => (
+            <span key={index}>
+              {line}
+              <br />
+            </span>
+          ))}
         </h1>
-        <p className="text-sm md:text-base text-foreground/60 px-2 md:px-0">
+        <p className="text-sm md:text-base text-foreground/60 px-2 md:px-0 mt-2">
           Sou desenvolvedor Full Stack, apaixonado por tecnologia e por
           construir aplicações funcionais. <br />
           Este site reúne alguns dos meus principais projetos e experiências.

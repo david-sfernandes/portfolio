@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   title: "Portfolio - David Fernandes",
   description: "Meu portfolio pessoal",
 };
+
+export async function generateStaticParams() {
+  return [{ lang: 'en-US' }, { lang: 'pt-BR' }]
+}
 
 export default function RootLayout({
   children,

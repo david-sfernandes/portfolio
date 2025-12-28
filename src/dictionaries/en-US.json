@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Full Stack\nDeveloper",
+    "description": "I am a Full Stack Developer, passionate about technology and building functional applications. This website brings together some of my main projects and experiences."
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Here are some of my characteristics and the tools I use",
+    "cta": "Learn more about me",
+    "description": "I am a Full Stack Software Developer with experience in building modern and scalable web applications, working both on the development of efficient and responsive interfaces and on the implementation of solid, well-structured backends. I enjoy combining logic and creativity to create functional, organized solutions focused on user experience. I see programming as a tool to solve real problems and transform needs into products through technology."
+  },
+  "skills": {
+    "backend": {
+      "title": "Back-End",
+      "description": "I work on back-end development, creating APIs, services, and integrations that support modern applications."
+    },
+    "frontend": {
+      "title": "Front-End",
+      "description": "I develop modern and responsive interfaces, always prioritizing usability, performance, and visual quality."
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "subtitle": "Get to know some of the technologies I use in my projects"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Discover some of the personal and professional projects I have created"
+  }
+}

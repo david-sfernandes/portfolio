@@ -15,7 +15,7 @@ export default function Header() {
         <button className="theme-btn">
           <SunIcon className="size-6" />
         </button>
-        <Link className="language-options" href="/en">
+        <Link className="language-options" href="/en-US" locale="">
           <p className="active rounded-l-full">
             PT
           </p>
