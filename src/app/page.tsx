@@ -6,7 +6,10 @@ import Projects from "@/components/projects/projects";
 
 export default function Page() {
   return (
-    <div className="flex flex-col min-h-screen font-sans scroll-smooth gap-10" suppressHydrationWarning>
+    <div
+      className="flex flex-col min-h-screen font-sans scroll-smooth gap-10"
+      suppressHydrationWarning
+    >
       <Header />
       <Home />
       <About />

@@ -9,13 +9,20 @@ export default function CardBackend({ className }: { className: string }) {
         <div className="flex-1">
           <CardTitle>Back-End</CardTitle>
           <CardText>
-            Atuo no desenvolvimento de back-ends, criando APIs, serviços e integrações que sustentam aplicações modernas.
+            Atuo no desenvolvimento de back-ends, criando APIs, serviços e
+            integrações que sustentam aplicações modernas.
           </CardText>
         </div>
         <div className="size-25 shrink-0 overflow-hidden block">
-          <Image src={"/server.svg"} width={230} height={230} className="object-cover size-full" alt="server image"/>
+          <Image
+            src={"/server.svg"}
+            width={230}
+            height={230}
+            className="object-cover size-full"
+            alt="server image"
+          />
         </div>
       </div>
     </div>
-  )
+  );
 }

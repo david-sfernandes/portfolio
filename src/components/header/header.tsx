@@ -16,10 +16,14 @@ export default function Header() {
           <SunIcon className="size-6" />
         </button>
         <div className="language-options">
-          <Link href="/" className="active rounded-l-full">PT</Link>
-          <Link href="/en" className="rounded-r-full">EN</Link>
+          <Link href="/" className="active rounded-l-full">
+            PT
+          </Link>
+          <Link href="/en" className="rounded-r-full">
+            EN
+          </Link>
         </div>
       </div>
     </header>
-  )
+  );
 }

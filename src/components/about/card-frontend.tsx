@@ -9,13 +9,20 @@ export default function CardFrontend({ className }: { className: string }) {
         <div className="flex-1">
           <CardTitle>Front-End</CardTitle>
           <CardText>
-            Desenvolvo interfaces modernas e responsivas, sempre priorizando usabilidade, desempenho e qualidade visual.
+            Desenvolvo interfaces modernas e responsivas, sempre priorizando
+            usabilidade, desempenho e qualidade visual.
           </CardText>
         </div>
         <div className="size-25 shrink-0 overflow-hidden block">
-          <Image src={"/server.svg"} width={230} height={230} className="object-cover size-full" alt="server image" />
+          <Image
+            src={"/server.svg"}
+            width={230}
+            height={230}
+            className="object-cover size-full"
+            alt="server image"
+          />
         </div>
       </div>
     </div>
-  )
+  );
 }

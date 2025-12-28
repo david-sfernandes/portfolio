@@ -6,4 +6,4 @@ export type Project = {
   url: string;
   repository_url: string;
   image_url: string;
-}
+};
