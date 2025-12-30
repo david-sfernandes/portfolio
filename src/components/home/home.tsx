@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function Home({ dictionary }: PropsWithDictionary) {
   return (
-    <main className="flex justify-center items-center h-screen w-full" id="home">
+    <main
+      className="flex justify-center items-center h-screen w-full"
+      id="home"
+    >
       <div className="flex flex-col items-center text-center max-w-full">
         <div className="scale-85 md:scale-100 border border-foreground/15 rounded-full bg-white flex gap-4 p-2 pr-5 items-center w-fit">
           <div className="size-10 rounded-full outline outline-foreground/15 overflow-hidden grayscale hover:grayscale-0 transition-all duration-150 ease-in">

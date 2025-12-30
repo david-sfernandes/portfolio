@@ -6,7 +6,10 @@ import CardProject from "./card-project";
 
 export default function Projects({ dictionary }: PropsWithDictionary) {
   return (
-    <section className="flex flex-col w-full items-center text-center min-h-screen gap-6 px-6 md:px-10" id="projects">
+    <section
+      className="flex flex-col w-full items-center text-center min-h-screen gap-6 px-6 md:px-10"
+      id="projects"
+    >
       <TitleNode>{dictionary.projects.title}</TitleNode>
       <SectionDescription>{dictionary.projects.subtitle}</SectionDescription>
       <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-3.5">

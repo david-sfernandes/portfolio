@@ -7,7 +7,7 @@ export default function CardAboutMe({
   content,
 }: {
   className: string;
-  title: string
+  title: string;
   content: string;
 }) {
   return (
