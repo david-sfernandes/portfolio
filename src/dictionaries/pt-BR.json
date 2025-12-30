@@ -1,5 +1,45 @@
 {
+  "navigation": {
+    "home": "Home",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
   "home": {
-    "title": "Desenvolvedor\nFull Stack"
+    "title": "Desenvolvedor\nFull Stack",
+    "description": "Sou desenvolvedor Full Stack, apaixonado por tecnologia e por construir aplicações funcionais.\nEste site reúne alguns dos meus principais projetos e experiências."
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "subtitle": "Aqui estão algumas caracteristicas \nminhas e ferramentas que uso",
+    "cta": "Aprenda mais sobre mim",
+    "description": "Sou desenvolvedor de software **Full Stack** com experiência na construção de aplicações web modernas e escaláveis, atuando tanto no desenvolvimento de **interfaces eficientes** e **responsivas** quanto na implementação de **backends sólidos** e **bem estruturados**. Gosto de unir lógica e criatividade para criar soluções funcionais, organizadas e com foco na experiência do usuário. Encaro a programação como uma ferramenta para resolver problemas reais e transformar necessidades em produtos através da tecnologia."
+  },
+  "skills": {
+    "backend": {
+      "backend": "Back-End",
+      "description": "Atuo no desenvolvimento de back-ends, criando APIs, serviços e integrações que sustentam aplicações modernas."
+    },
+    "frontend": {
+      "title": "Front-End",
+      "description": "Desenvolvo interfaces modernas e responsivas, sempre priorizando usabilidade, desempenho e qualidade visual."
+    }
+  },
+  "technologies": {
+    "title": "Técnologias",
+    "subtitle": "Conheca algumas das técnologias que eu\nutilizo em projetos"
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Conheça alguns dos projetos\npessoais e empresariais que eu criei"
+  },
+  "contact": {
+    "title": "Me acompanhe\npor aqui",
+    "copyright": "© 2026 David Fernandes - Todos os direitos reservados"
+  },
+  "options": {
+    "theme": "Tema",
+    "language": "Idioma",
+    "currentLanguage": "PT"
   }
 }

@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
+import MDText from "../MDText";
 
 export default function CardText({ children }: PropsWithChildren) {
-  return <p className="text-sm text-foreground/60">{children}</p>;
+  return <MDText className="text-sm text-foreground/60">{children as string}</MDText>;
 }

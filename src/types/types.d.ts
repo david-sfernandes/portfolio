@@ -7,3 +7,5 @@ export type Project = {
   repository_url: string;
   image_url: string;
 };
+
+export type PropsWithDictionary = { dictionary: Record<string, Any> };

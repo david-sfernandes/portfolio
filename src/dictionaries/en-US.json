@@ -7,13 +7,13 @@
   },
   "home": {
     "title": "Full Stack\nDeveloper",
-    "description": "I am a Full Stack Developer, passionate about technology and building functional applications. This website brings together some of my main projects and experiences."
+    "description": "I am a Full Stack Developer, passionate about technology and building functional applications.\nThis website brings together some of my main projects and experiences."
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Here are some of my characteristics and the tools I use",
+    "subtitle": "Here are some of my characteristics\nand the tools I use",
     "cta": "Learn more about me",
-    "description": "I am a Full Stack Software Developer with experience in building modern and scalable web applications, working both on the development of efficient and responsive interfaces and on the implementation of solid, well-structured backends. I enjoy combining logic and creativity to create functional, organized solutions focused on user experience. I see programming as a tool to solve real problems and transform needs into products through technology."
+    "description": "I am a **Full Stack** Software Developer with experience in building modern and scalable web applications, working both on the development of **efficient** and **responsive interfaces** and on the implementation of **solid**, **well-structured backends**. I enjoy combining logic and creativity to create functional, organized solutions focused on user experience. I see programming as a tool to solve real problems and transform needs into products through technology."
   },
   "skills": {
     "backend": {
@@ -27,10 +27,19 @@
   },
   "technologies": {
     "title": "Technologies",
-    "subtitle": "Get to know some of the technologies I use in my projects"
+    "subtitle": "Get to know some of the technologies\nI use in my projects"
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Discover some of the personal and professional projects I have created"
+    "subtitle": "Discover some of the persona\nand professional projects I have created"
+  },
+  "contact": {
+    "title": "Follow me\nhere",
+    "copyright": "© 2026 David Fernandes - All rights reserved"
+  },
+  "options": {
+    "theme": "Theme",
+    "language": "Language",
+    "currentLanguage": "EN"
   }
 }

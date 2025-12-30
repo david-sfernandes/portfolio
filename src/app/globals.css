@@ -29,6 +29,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  white-space: pre-line;
+}
+
 @utility base-card-layout {
   border: 1px solid hsla(210, 11%, 15%, 0.15);
   background-color: white;

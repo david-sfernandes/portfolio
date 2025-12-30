@@ -1,9 +1,10 @@
+import { PropsWithDictionary } from "@/types/types";
 import Image from "next/image";
 import BtnSocial from "./btn-social";
 
-export default function Contact() {
+export default function Contact({ dictionary }: PropsWithDictionary) {
   return (
-    <section className="flex flex-col w-full items-center  md:min-h-screen gap-6 px-6 md:px-9.5 py-3 pt-24">
+    <section className="flex flex-col w-full items-center  md:min-h-screen gap-6 px-6 md:px-9.5 py-3 pt-24" id="contact">
       <div className="bg-linear-30 from-foreground to-darker rounded-3xl h-full max-h-96 md:max-h-none w-full flex px-11 py-14 flex-1 flex-col isolate relative overflow-hidden">
         <Image
           src="/contact_image.svg"
@@ -13,18 +14,16 @@ export default function Contact() {
           alt=""
         />
         <h4 className="text-white text-2xl md:text-8xl font-medium">
-          Me acompanhe
-          <br />
-          por aqui
+          {dictionary.contact.title}
         </h4>
         <div className="flex flex-col md:flex-row gap-3 mt-10">
-          <BtnSocial text="LinkeIn" url="#" />
-          <BtnSocial text="GitHub" url="#" />
-          <BtnSocial text="E-mail" url="#" />
+          <BtnSocial url="https://www.linkedin.com/in/david-sfernandes/">LinkedIn</BtnSocial>
+          <BtnSocial url="https://github.com/david-sfernandes">GitHub</BtnSocial>
+          <BtnSocial url="mailto:davisou.fer@gmail.com">E-mail</BtnSocial>
         </div>
       </div>
       <p className="text-foreground/60 text-xs text-center">
-        © 2026 David Fernandes - Todos os direitos reservados
+        {dictionary.contact.copyright}
       </p>
     </section>
   );

@@ -1,12 +1,12 @@
 import { SquareArrowOutUpRight } from "lucide-react";
+import { PropsWithChildren } from "react";
 
 export default function BtnSocial({
-  text,
+  children,
   url,
 }: {
-  text: string;
   url: string;
-}) {
+} & PropsWithChildren) {
   return (
     <a
       href={url}
@@ -15,7 +15,7 @@ export default function BtnSocial({
       <div className="bg-foreground rounded-full size-9 flex justify-center items-center">
         <SquareArrowOutUpRight className="text-white size-5" />
       </div>
-      <p className="text-white text-lg font-normal">{text}</p>
+      <p className="text-white text-lg font-normal">{children}</p>
     </a>
   );
 }

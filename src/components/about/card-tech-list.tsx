@@ -3,16 +3,19 @@ import Image from "next/image";
 import CardText from "./card-text";
 import CardTitle from "./card-title";
 
-export default function CardTechList({ className }: { className: string }) {
-  const QTY = 15;
+export default function CardTechList({
+  className,
+  title,
+  description,
+}: {
+  className: string;
+  title: string;
+  description: string;
+}) {
   return (
     <div className={`card-layout text-center ${className}`}>
-      <CardTitle>Técnologias</CardTitle>
-      <CardText>
-        Conheca algumas das técnologias que eu
-        <br />
-        utilizo em projetos
-      </CardText>
+      <CardTitle>{title}</CardTitle>
+      <CardText>{description}</CardText>
       <div className="tech-marquee">
         <div className="tech-marquee-track">
           {tech_list.data.map((item, i) => (
