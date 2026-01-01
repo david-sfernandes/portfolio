@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CardText from "./card-text";
 import CardTitle from "./card-title";
+import { div as Div } from "motion/react-client";
 
 export default function CardStack({
   className,
@@ -12,7 +13,16 @@ export default function CardStack({
   text: string;
 }) {
   return (
-    <div className={`card-layout ${className}`}>
+    <Div
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: "-150px" }}
+      transition={{
+        duration: 0.2,
+        scale: { type: "spring", visualDuration: 0.2, bounce: 0.4 },
+      }}
+      className={`card-layout ${className}`}
+    >
       <div className="card-stack-content">
         <div className="flex-1">
           <CardTitle>{title}</CardTitle>
@@ -28,6 +38,6 @@ export default function CardStack({
           />
         </div>
       </div>
-    </div>
+    </Div>
   );
 }

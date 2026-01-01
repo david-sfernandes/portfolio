@@ -2,6 +2,7 @@ import tech_list from "@/data/tech.json";
 import Image from "next/image";
 import CardText from "./card-text";
 import CardTitle from "./card-title";
+import { div as Div } from "motion/react-client";
 
 export default function CardTechList({
   className,
@@ -12,15 +13,30 @@ export default function CardTechList({
   title: string;
   description: string;
 }) {
-  const TECH_LIST_COLS = tech_list.data.length * 2 / 3;
-  const TECH_LIST_WIDTH = TECH_LIST_COLS * 4 + (TECH_LIST_COLS - 1) * 0.625
+  const TECH_LIST_COLS = (tech_list.data.length * 2) / 3;
+  const TECH_LIST_WIDTH = TECH_LIST_COLS * 4 + (TECH_LIST_COLS - 1) * 0.625;
 
   return (
-    <div className={`card-layout text-center ${className}`}>
+    <Div
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: "-150px" }}
+      transition={{
+        duration: 0.2,
+        scale: { type: "spring", visualDuration: 0.2, bounce: 0.4 },
+      }}
+      className={`card-layout text-center ${className}`}
+    >
       <CardTitle>{title}</CardTitle>
       <CardText>{description}</CardText>
       <div className="tech-marquee">
-        <div className="tech-marquee-track" style={{ gridTemplateColumns: `repeat(${TECH_LIST_COLS}, minmax(0, 1fr))`, width: `${TECH_LIST_WIDTH}rem` }}>
+        <div
+          className="tech-marquee-track"
+          style={{
+            gridTemplateColumns: `repeat(${TECH_LIST_COLS}, minmax(0, 1fr))`,
+            width: `${TECH_LIST_WIDTH}rem`,
+          }}
+        >
           {tech_list.data.map((item, i) => (
             <Box key={`${i}-tech1`} image={item.image} name={item.name} />
           ))}
@@ -29,7 +45,7 @@ export default function CardTechList({
           ))}
         </div>
       </div>
-    </div>
+    </Div>
   );
 }
 

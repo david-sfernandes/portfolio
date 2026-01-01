@@ -1,10 +1,18 @@
 import { PropsWithDictionary } from "@/types/types";
 import Image from "next/image";
 import BtnSocial from "./btn-social";
+import { section as Section } from "motion/react-client";
 
 export default function Contact({ dictionary }: PropsWithDictionary) {
   return (
-    <section
+    <Section
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{
+        duration: 0.2,
+        scale: { type: "spring", visualDuration: 0.2, bounce: 0.4 },
+      }}
       className="flex flex-col w-full items-center  md:min-h-screen gap-6 px-6 md:px-9.5 py-3 pt-24"
       id="contact"
     >
@@ -32,6 +40,6 @@ export default function Contact({ dictionary }: PropsWithDictionary) {
       <p className="text-foreground/60 text-xs text-center">
         {dictionary.contact.copyright}
       </p>
-    </section>
+    </Section>
   );
 }

@@ -1,5 +1,6 @@
 import { PropsWithDictionary } from "@/types/types";
 import Image from "next/image";
+import { div as Div } from "motion/react-client";
 
 export default function Home({ dictionary }: PropsWithDictionary) {
   return (
@@ -8,7 +9,15 @@ export default function Home({ dictionary }: PropsWithDictionary) {
       id="home"
     >
       <div className="flex flex-col items-center text-center max-w-full">
-        <div className="scale-85 md:scale-100 border border-foreground/15 rounded-full bg-white flex gap-4 p-2 pr-5 items-center w-fit">
+        <Div
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{
+            duration: 0.2,
+            scale: { type: "spring", visualDuration: 0.2, bounce: 0.4 },
+          }}
+          className="scale-85 md:scale-100 border border-foreground/15 rounded-full bg-white flex gap-4 p-2 pr-5 items-center w-fit"
+        >
           <div className="size-10 rounded-full outline outline-foreground/15 overflow-hidden grayscale hover:grayscale-0 transition-all duration-150 ease-in">
             <Image
               src="/profile.jpg"
@@ -19,7 +28,7 @@ export default function Home({ dictionary }: PropsWithDictionary) {
             />
           </div>
           <p className="text-xl">David Fernandes</p>
-        </div>
+        </Div>
         <h1 className="text-4xl/12 font-extrabold md:text-[6.75rem]/[6.75rem]">
           {dictionary.home.title}
         </h1>

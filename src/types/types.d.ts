@@ -1,12 +1,12 @@
 export type Project = {
   id: string;
   name: {
-    pt: string,
-    en: string
+    pt: string;
+    en: string;
   };
   description: {
-    pt: string,
-    en: string
+    pt: string;
+    en: string;
   };
   tech_list: string[];
   url: string;
