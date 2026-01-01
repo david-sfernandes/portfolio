@@ -1,10 +1,10 @@
 import { PropsWithDictionary } from "@/types/types";
-import projects from "../../../projects.json";
+import projects from "@/data/projects.json";
 import SectionDescription from "../ui/section-description";
 import TitleNode from "../ui/title-node";
 import CardProject from "./card-project";
 
-export default function Projects({ dictionary }: PropsWithDictionary) {
+export default function Projects({ dictionary, selectedLanguage }: PropsWithDictionary & { selectedLanguage: string }) {
   return (
     <section
       className="flex flex-col w-full items-center text-center min-h-screen gap-6 px-6 md:px-10"
@@ -14,7 +14,7 @@ export default function Projects({ dictionary }: PropsWithDictionary) {
       <SectionDescription>{dictionary.projects.subtitle}</SectionDescription>
       <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-3.5">
         {projects.data.map((project) => (
-          <CardProject project={project} key={project.id} />
+          <CardProject project={project} key={project.id} selectedLanguage={selectedLanguage} />
         ))}
       </div>
     </section>

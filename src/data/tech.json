@@ -93,6 +93,18 @@
       "image": "rabbitmq.svg"
     },
     {
+      "name": "Prisma",
+      "image": "prisma-orm.jpg"
+    },
+    {
+      "name": "Airflow",
+      "image": "airflow.png"
+    },
+    {
+      "name": "BetterAuth",
+      "image": "betterauth.png"
+    },
+    {
       "name": "Python",
       "image": "python.svg"
     }

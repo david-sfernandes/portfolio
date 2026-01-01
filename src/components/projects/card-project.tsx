@@ -3,7 +3,9 @@ import { ArrowUpRightFromSquareIcon } from "lucide-react";
 import Image from "next/image";
 import TechNode from "./tech-node";
 
-export default function CardProject({ project }: { project: Project }) {
+export default function CardProject({ project, selectedLanguage }: { project: Project, selectedLanguage: string }) {
+  const LANGUAGE: "pt" | "en" = selectedLanguage === "en-US" ? "en" : "pt"
+
   return (
     <div className="card-layout card-project">
       <div className="w-full aspect-video overflow-hidden rounded-xl">
@@ -15,8 +17,8 @@ export default function CardProject({ project }: { project: Project }) {
           alt="imagem projeto"
         />
       </div>
-      <h5>{project.name}</h5>
-      <p>{project.description}</p>
+      <h5>{project.name[LANGUAGE]}</h5>
+      <p>{project.description[LANGUAGE]}</p>
       <div className="tech-list">
         {project.tech_list.map((tech) => (
           <TechNode key={`${project.id}-${tech.toLowerCase()}`}>

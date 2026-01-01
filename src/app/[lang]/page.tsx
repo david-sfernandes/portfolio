@@ -21,7 +21,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       <Header dictionary={dict} />
       <Home dictionary={dict} />
       <About dictionary={dict} />
-      <Projects dictionary={dict} />
+      <Projects dictionary={dict} selectedLanguage={lang} />
       <Contact dictionary={dict} />
       <OptionNode dictionary={dict} />
     </div>

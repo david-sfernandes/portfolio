@@ -1,0 +1,108 @@
+{
+  "data": [
+    {
+      "id": "project-1",
+      "name": {
+        "pt": "Terabyte Dashboard — Relatórios Internos Automatizados",
+        "en": "Terabyte Dashboard — Automated Internal Reporting System"
+      },
+      "description": {
+        "pt": "O Terabyte Dashboard é uma aplicação Full Stack desenvolvida para uso interno da empresa, com o objetivo de centralizar e automatizar a geração de relatórios e análises a partir de múltiplos sistemas corporativos. O projeto foi concebido e implementado de ponta a ponta, garantindo integração de dados, segurança e escalabilidade para atender diferentes áreas do negócio.\nNo back-end, desenvolvi uma API GraphQL em TypeScript com rotinas de ETL, autenticação própria e controle de permissões. Já no front-end, a aplicação foi construída em Next.js, oferecendo gestão de usuários, feedback interno e visualização de relatórios com gráficos customizados e exportáveis, desenvolvidos sob medida para as necessidades da empresa.",
+        "en": "Terabyte Dashboard is a Full Stack application developed for internal company use, designed to centralize and automate the generation of reports and analytics from multiple corporate systems. The project was fully designed and implemented end-to-end, ensuring data integration, security, and scalability to support different business areas.\nOn the back end, I built a GraphQL API using TypeScript with ETL routines, custom authentication, and role-based access control. On the front end, the application was developed with Next.js, providing user management, internal feedback features, and report visualization with customized, exportable charts tailored to the company’s needs."
+      },
+      "tech_list": [
+        "Next.js",
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "React",
+        "Tailwind CSS",
+        "GraphQL",
+        "Recharts",
+        "Zustand",
+        "Prisma",
+        "SQL Server"
+      ],
+      "url": "https://app.terabyte.com.br/auth",
+      "repository_url": "",
+      "image_url": "/projects/teradash.webp"
+    },
+    {
+      "id": "project-2",
+      "name": {
+        "pt": "TeraDoc — Sistema de Emissão de Documentos de Segurança",
+        "en": "TeraDoc — Safety Documentation Management System"
+      },
+      "description": {
+        "pt": "O TeraDoc foi desenvolvido a partir da necessidade de um cliente de modernizar um sistema legado, migrando para uma solução mais atual, eficiente e escalável. A aplicação permite o registro de componentes produzidos pela empresa e, a partir desses dados, a geração dinâmica e ágil de relatórios e documentos de segurança.\nO sistema foi construído com Next.js como base, utilizando bibliotecas como TanStack Table para criar tabelas e formulários editáveis que agilizam a produção de documentos customizados. Além disso, estou desenvolvendo microsserviços desacoplados para funções específicas, como um serviço dedicado à geração de documentos em PDF utilizando Python, garantindo flexibilidade e evolução contínua da plataforma.",
+        "en": "TeraDoc was developed to address a client’s need to modernize a legacy system by migrating to a more modern, efficient, and scalable solution. The application enables the registration of company-produced components and dynamically generates safety reports and documentation based on this data.\nThe system was built on top of Next.js, using libraries such as TanStack Table to deliver editable tables and forms that streamline the creation of customized documents. In addition, I am developing decoupled microservices for specific tasks, including a dedicated service for PDF document generation using Python, ensuring flexibility and long-term scalability."
+      },
+      "tech_list": [
+        "TypeScript",
+        "CSS",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML",
+        "Better Auth",
+        "Prisma",
+        "Postgres",
+        "Python",
+        "TanStack Table"
+      ],
+      "url": "https://teradoc.com.br",
+      "repository_url": "",
+      "image_url": "/projects/teradoc.webp"
+    },
+    {
+      "id": "project-3",
+      "name": {
+        "pt": "Instagram Clone",
+        "en": "Instagram Clone"
+      },
+      "description": {
+        "pt": "Projeto pessoal desenvolvido com o objetivo de explorar e integrar diferentes tecnologias na recriação de uma aplicação complexa inspirada no Instagram. A plataforma simula a interface e as principais funcionalidades da rede social, permitindo a criação de publicações com imagens, curtidas e comentários em tempo real.\nA aplicação conta com autenticação de usuários e perfis individuais, utilizando Clerk para login e controle de acesso, além do Firebase para armazenamento em nuvem e sincronização dos dados. Essa arquitetura possibilita visualização e publicação de conteúdos em tempo real, reforçando conceitos de aplicações modernas, escaláveis e orientadas à experiência do usuário.",
+        "en": "This personal project was developed to explore and integrate multiple technologies by recreating a complex application inspired by Instagram. The platform replicates the interface and core features of the social network, allowing users to create image posts, like and comment on content in real time.\nThe application includes authenticated user profiles using Clerk for login and access control, along with Firebase for cloud data storage and synchronization. This architecture enables real-time content publishing and viewing, reinforcing best practices for modern, scalable, and user-focused web applications."
+      },
+      "tech_list": [
+        "Clerk",
+        "Firebase",
+        "Zustand",
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML"
+      ],
+      "url": "https://next-instagram-ebon.vercel.app/",
+      "repository_url": "https://github.com/david-sfernandes/next-instagram",
+      "image_url": "/projects/next-instagram.webp"
+    },
+    {
+      "id": "project-4",
+      "name": {
+        "pt": "[Em breve] TeraChat — Ambiente corporativo de imagens com IA",
+        "en": "[Coming Soon] TeraChat — Corporate AI Image Generation Platform"
+      },
+      "description": {
+        "pt": "O TeraChat é um projeto em desenvolvimento que surgiu da necessidade de um cliente por um ambiente corporativo seguro, gerenciável e personalizável para geração de imagens com inteligência artificial. A proposta é permitir que colaboradores criem imagens a partir de prompts e configurações pré-definidas, alinhadas às diretrizes e necessidades da empresa.\nA plataforma está sendo pensada de forma extensível, permitindo no futuro a integração com diferentes ferramentas e modelos de IA, como Google Nano Banana ou outros, conforme a evolução tecnológica e as demandas do negócio. O foco do projeto está em segurança, controle, escalabilidade e facilidade de uso em ambientes corporativos.",
+        "en": "TeraChat is an in-progress project created to meet a client’s need for a secure, manageable, and customizable corporate environment for AI-powered image generation. The platform aims to enable employees to create images using predefined prompts and configurations aligned with company guidelines and requirements.\nThe solution is designed to be extensible, allowing future integration with multiple AI tools and models, such as Google Nano Banana or others, as technology evolves and business needs grow. The project focuses on security, control, scalability, and ease of use within corporate environments."
+      },
+      "tech_list": [
+        "Nano Banana",
+        "JavaScript",
+        "TypeScript",
+        "CSS",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Better Auth"
+      ],
+      "url": "",
+      "repository_url": "",
+      "image_url": "/projects/coming_soon.webp"
+    }
+  ]
+}
