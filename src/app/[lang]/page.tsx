@@ -18,12 +18,12 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       className="flex flex-col min-h-screen font-sans scroll-smooth gap-10"
       suppressHydrationWarning
     >
-      <Header dictionary={dict} />
+      <Header dictionary={dict} selectedLanguage={lang} />
       <Home dictionary={dict} />
       <About dictionary={dict} />
       <Projects dictionary={dict} selectedLanguage={lang} />
       <Contact dictionary={dict} />
-      <OptionNode dictionary={dict} />
+      <OptionNode dictionary={dict} selectedLanguage={lang} />
     </div>
   );
 }

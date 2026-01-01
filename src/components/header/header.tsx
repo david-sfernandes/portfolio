@@ -4,7 +4,10 @@ import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
-export default function Header({ dictionary }: PropsWithDictionary) {
+export default function Header({
+  dictionary,
+  selectedLanguage,
+}: PropsWithDictionary & { selectedLanguage: string }) {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -27,7 +30,10 @@ export default function Header({ dictionary }: PropsWithDictionary) {
             <SunIcon className="size-6" />
           )}
         </button>
-        <Link className="language-options" href="/en-US" locale="">
+        <Link
+          className="language-options"
+          href={selectedLanguage === "pt-BR" ? "/en-US" : "/pt-BR"}
+        >
           <p className="active rounded-l-full">PT</p>
           <p className="rounded-r-full">EN</p>
         </Link>
