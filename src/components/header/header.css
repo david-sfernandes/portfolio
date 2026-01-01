@@ -3,7 +3,7 @@ header {
 }
 
 nav {
-  @apply flex border border-foreground/15 rounded-full px-3.5 bg-white;
+  @apply flex border border-foreground/15 rounded-full px-3.5 bg-card-background;
 }
 
 nav a {

@@ -23,11 +23,15 @@ export default function About({ dictionary }: PropsWithDictionary) {
           title={dictionary.skills.backend.title}
           text={dictionary.skills.backend.description}
           className="md:row-start-3"
+          img="/server.svg"
+          imgDark="/server-white.svg"
         />
         <CardStack
           title={dictionary.skills.frontend.title}
           text={dictionary.skills.frontend.description}
           className="md:row-start-3 md:col-start-2"
+          img="/frontend.svg"
+          imgDark="/frontend-white.svg"
         />
         <CardTechList
           className="sm:col-span-2 md:col-span-1 md:row-span-3 md:col-start-3"

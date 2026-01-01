@@ -51,7 +51,7 @@ export default function CardTechList({
 
 function Box({ name, image }: { name: string; image: string }) {
   return (
-    <div className="size-16 card-layout p-2! shadow-inner group relative hover:bg-darker/3!">
+    <div className="size-16 card-layout p-2! shadow-inner group relative hover:bg-accent/3!">
       <div className="absolute z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-150 ease-in-out -top-7 py-1 px-1.5 bg-black/60 backdrop-blur-md rounded left-1/2 -translate-x-1/2">
         <p className="text-white text-xs font-medium">{name}</p>
       </div>

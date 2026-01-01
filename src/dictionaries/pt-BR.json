@@ -17,7 +17,7 @@
   },
   "skills": {
     "backend": {
-      "backend": "Back-End",
+      "title": "Back-End",
       "description": "Atuo no desenvolvimento de back-ends, criando APIs, serviços e integrações que sustentam aplicações modernas."
     },
     "frontend": {

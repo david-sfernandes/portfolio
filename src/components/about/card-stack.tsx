@@ -1,17 +1,25 @@
+"use client";
 import Image from "next/image";
 import CardText from "./card-text";
 import CardTitle from "./card-title";
 import { div as Div } from "motion/react-client";
+import { useTheme } from "next-themes";
 
 export default function CardStack({
   className,
   title,
   text,
+  img,
+  imgDark,
 }: {
   className: string;
   title: string;
   text: string;
+  img: string;
+  imgDark: string;
 }) {
+  const { theme } = useTheme();
+
   return (
     <Div
       initial={{ scale: 0.9, opacity: 0 }}
@@ -30,7 +38,7 @@ export default function CardStack({
         </div>
         <div className="size-20 md:size-25 shrink-0 overflow-hidden block">
           <Image
-            src={"/server.svg"}
+            src={theme === "light" ? img : imgDark}
             width={230}
             height={230}
             className="object-cover size-full"

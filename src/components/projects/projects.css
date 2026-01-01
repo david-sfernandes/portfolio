@@ -21,9 +21,10 @@
 .visit-btn {
   @apply rounded-full bg-foreground text-background px-8 py-2 flex items-center 
   justify-center gap-2.5 text-base/4
-  hover:bg-darker;
+  hover:bg-accent;
 }
 
 .repo-btn {
-  @apply rounded-full bg-background text-foreground p-2 hover:bg-darker/10;
+  @apply rounded-full bg-background text-foreground
+  dark:bg-white/10 p-2 hover:bg-white/20;
 }

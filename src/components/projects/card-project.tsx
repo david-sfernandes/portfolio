@@ -1,8 +1,10 @@
+"use client";
 import { Project } from "@/types/types";
 import { ArrowUpRightFromSquareIcon } from "lucide-react";
 import { div as Div } from "motion/react-client";
 import Image from "next/image";
 import TechNode from "./tech-node";
+import { useTheme } from "next-themes";
 
 export default function CardProject({
   project,
@@ -13,14 +15,15 @@ export default function CardProject({
   selectedLanguage: string;
   index: number;
 }) {
+  const { theme } = useTheme();
   const LANGUAGE: "pt" | "en" = selectedLanguage === "en-US" ? "en" : "pt";
   const duration = 0.4 + index * 0.1;
 
   return (
     <Div
       className="card-layout card-project"
-      initial={{ opacity: 0, scale: 0.5, y: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1, y: 1 }}
+      initial={{ opacity: 0, scale: 0.7 }}
+      whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, margin: "-150px" }}
       transition={{
         duration: duration,
@@ -48,7 +51,7 @@ export default function CardProject({
       <div className="flex w-full gap-2.5">
         <a href={project.url} className="visit-btn" title="Visitar">
           Visitar{" "}
-          <ArrowUpRightFromSquareIcon className="text-white/80 size-4.5 mt-0.5" />
+          <ArrowUpRightFromSquareIcon className="text-background/80 size-4.5 mt-0.5" />
         </a>
         {project.repository_url && (
           <a
@@ -56,13 +59,23 @@ export default function CardProject({
             className="repo-btn"
             title="Repositório GitHub"
           >
-            <Image
-              src="/github.svg"
-              width={24}
-              height={24}
-              className="size-6"
-              alt="github"
-            />
+            {theme === "light" ? (
+              <Image
+                src="/github.svg"
+                width={24}
+                height={24}
+                className="size-6"
+                alt="github"
+              />
+            ) : (
+              <Image
+                src="/github-white.svg"
+                width={24}
+                height={24}
+                className="size-6"
+                alt="github"
+              />
+            )}
           </a>
         )}
       </div>

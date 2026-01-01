@@ -1,8 +1,12 @@
+"use client";
 import { PropsWithDictionary } from "@/types/types";
-import { SunIcon } from "lucide-react";
+import { MoonIcon, SunIcon } from "lucide-react";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 
 export default function Header({ dictionary }: PropsWithDictionary) {
+  const { theme, setTheme } = useTheme();
+
   return (
     <header>
       <nav>
@@ -13,8 +17,15 @@ export default function Header({ dictionary }: PropsWithDictionary) {
       </nav>
 
       <div className="left-side">
-        <button className="theme-btn">
-          <SunIcon className="size-6" />
+        <button
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          className="theme-btn"
+        >
+          {theme === "light" ? (
+            <MoonIcon className="size-6" />
+          ) : (
+            <SunIcon className="size-6" />
+          )}
         </button>
         <Link className="language-options" href="/en-US" locale="">
           <p className="active rounded-l-full">PT</p>

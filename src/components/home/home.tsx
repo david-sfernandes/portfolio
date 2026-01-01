@@ -16,7 +16,7 @@ export default function Home({ dictionary }: PropsWithDictionary) {
             duration: 0.2,
             scale: { type: "spring", visualDuration: 0.2, bounce: 0.4 },
           }}
-          className="scale-85 md:scale-100 border border-foreground/15 rounded-full bg-white flex gap-4 p-2 pr-5 items-center w-fit"
+          className="scale-85 md:scale-100 border border-foreground/15 rounded-full bg-card-background flex gap-4 p-2 pr-5 items-center w-fit"
         >
           <div className="size-10 rounded-full outline outline-foreground/15 overflow-hidden grayscale hover:grayscale-0 transition-all duration-150 ease-in">
             <Image

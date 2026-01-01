@@ -4,15 +4,37 @@
 @import "../components/projects/projects.css";
 
 :root {
-  --background: #f5f6f7;
+  --background: hsl(210, 11%, 96%);
   --foreground: hsl(210, 11%, 15%);
-  --darker: #070808;
+  --accent: hsl(180, 7%, 3%);
+  --card-background: white;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+[data-theme="dark"] {
+  --background: hsl(0, 0%, 10%);
+  --foreground: hsl(210, 11%, 96%);
+  --accent: white;
+  --card-background: hsl(210, 11%, 15%);
+}
+
+[data-theme="light"] {
+  --background: hsl(210, 11%, 96%);
+  --foreground: hsl(210, 11%, 15%);
+  --accent: hsl(180, 7%, 3%);
+  --card-background: white;
+}
+
+#github-svg {
+  @apply dark:fill-amber-50!;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-darker: var(--darker);
+  --color-card-background: var(--card-background);
+  --color-accent: var(--accent);
   --font-sans: var(--font-inter);
 }
 
@@ -39,17 +61,12 @@ h6 {
   white-space: pre-line;
 }
 
-@utility base-card-layout {
-  border: 1px solid hsla(210, 11%, 15%, 0.15);
-  background-color: white;
-}
-
 .card-layout {
-  @apply base-card-layout rounded-2xl;
+  @apply bg-card-background rounded-2xl border border-foreground/15;
 }
 
 .card-layout-rounded {
-  @apply base-card-layout rounded-full;
+  @apply bg-card-background rounded-full border border-foreground/15;
 }
 
 .title-node {
